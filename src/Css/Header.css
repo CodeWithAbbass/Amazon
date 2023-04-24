@@ -1,0 +1,106 @@
+.Header {
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #131921;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	overflow: hidden;
+}
+
+.Header_Logo {
+	width: 100px;
+	object-fit: contain;
+	margin: 0 20px;
+	vertical-align: middle;
+}
+
+.Header_Search {
+	display: flex;
+	flex: 1;
+	align-items: center;
+	margin: 0 10px;
+	height: 40px;
+	transition: 0.4s ease-in-out;
+	border-radius: 5px;
+}
+
+.Header_SearchIn {
+	font-size: 12px;
+	font-weight: 600;
+	background-color: #f3f3f3;
+	width: 50px;
+	padding-left: 5px;
+	height: 100%;
+	color: #5d5d5d;
+	cursor: pointer;
+	transition: 0.4s ease-in-out;
+	border-right: 1px solid #cfcfcf;
+	border-radius: 5px 0px 0px 5px;
+	z-index: 1;
+}
+
+.Header_SearchIn:focus-visible,
+.Header_SearchIn:hover {
+	color: #0f1111;
+	background-color: #dadada;
+	box-shadow: 0 0 0 2px #f90, 0 0 0 3px rgba(255, 153, 0, 0.5);
+}
+.Header_SearchInput {
+	height: 100%;
+	width: 100%;
+	font-weight: 600;
+	transition: 0.4s ease-in-out;
+	padding: 10px;
+}
+.Header_Sprint_Focused {
+	box-shadow: 0 0 0 2px #f90, 0 0 0 3px rgba(255, 153, 0, 0.5);
+}
+
+.Header_SearchIcon {
+	height: 100% !important;
+	width: 50px !important;
+	background-color: #febd69;
+	padding: 5px;
+	cursor: pointer;
+	border-radius: 0px 5px 5px 0px;
+	transition: 0.4s ease-in-out;
+	z-index: 1;
+}
+.Header_SearchIcon:focus-visible,
+.Header_SearchIcon:hover {
+	background-color: #f3a847;
+	box-shadow: 0 0 0 2px #f90, 0 0 0 3px rgba(255, 153, 0, 0.5);
+}
+.Header_SearchIconSVG {
+	height: 100% !important;
+	width: 100% !important;
+}
+
+.Header_Nav {
+	display: flex;
+	justify-content: space-evenly;
+}
+.Header_NavOptions {
+	display: flex;
+	flex-direction: column;
+	margin: 0 10px;
+	color: white;
+}
+.Header_NavOptions_LineOne {
+	font-size: 10px;
+}
+.Header_NavOptions_LineTwo {
+	font-size: 13px;
+	font-weight: 800;
+}
+.Basket_Option {
+	flex-direction: row;
+	align-items: center;
+}
+.BasketCount {
+	margin-left: 10px;
+	margin-right: 10px;
+}

@@ -1,0 +1,77 @@
+.MainSlider {
+	width: 100%;
+	height: 600px;
+	position: relative;
+	overflow: hidden;
+}
+.mySlide {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	transition: 0.3s ease-in-out;
+	opacity: 0;
+	visibility: hidden;
+}
+.mySlide img {
+	width: 100%;
+	object-fit: contain;
+}
+.next {
+	/* left: 100%; */
+	transform: translateX(100%);
+}
+.prev {
+	opacity: 1;
+	visibility: visible;
+	/* right: 100%; */
+	transform: translateX(-100%);
+}
+.active {
+	/* left: 0; */
+	opacity: 1;
+	visibility: visible;
+	transform: translate(0%) !important;
+	z-index: 1;
+}
+
+/* Next & previous buttons */
+.prevBtn,
+.nextBtn {
+	cursor: pointer;
+	position: absolute;
+	top: 5px;
+	width: auto;
+	transition: 0.4s ease-in-out;
+	user-select: none;
+	height: 40%;
+	padding: 40px;
+	border-radius: 5px;
+	outline: none;
+	color: #000;
+	z-index: 1;
+}
+
+.prevBtn {
+	left: 5px;
+}
+.nextBtn {
+	right: 5px;
+}
+
+.prevBtn:focus,
+.nextBtn:focus {
+	outline: 5px auto -webkit-focus-ring-color;
+	outline-offset: -2px;
+	box-shadow: inset 0 0 0 2px #fff, inset 0 0 0 4px #008296;
+}
+
+.prevBtn_inner,
+.nextBtn_inner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 50px;
+	color: black;
+}

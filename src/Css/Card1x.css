@@ -1,0 +1,44 @@
+.Card1x {
+	width: 100%;
+	height: 100%;
+	background: white;
+	padding: 1rem;
+	position: relative;
+	padding-bottom: 2rem;
+}
+.Card_Header_headline {
+	font-size: 21px !important;
+	line-height: 27.3px !important;
+}
+.Card_Body {
+	margin: 1rem 0;
+}
+.Card_Footer {
+	position: absolute;
+	bottom: 15px;
+}
+.Card_Footer_Link {
+	text-decoration: none;
+	color: #007185;
+	font-size: 13px;
+}
+.Card_Footer_Link:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+.SI_Link {
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	height: 320px;
+}
+.SI_Image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+@media (min-width: 1232px) {
+
+}

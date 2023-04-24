@@ -1,9 +1,12 @@
 import React from 'react';
 import './App.css';
+import Header from './Components/Header';
+import Home from './Components/Home';
 const App = () => {
 	return (
 		<div className='App'>
-			<h1>Amazon</h1>
+			<Header />
+			<Home />
 		</div>
 	);
 };
