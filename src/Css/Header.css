@@ -1,106 +1,519 @@
 .Header {
-	height: 60px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background-color: #131921;
-	position: sticky;
-	top: 0;
-	z-index: 10;
-	overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  overflow: hidden;
 }
-
-.Header_Logo {
-	width: 100px;
-	object-fit: contain;
-	margin: 0 20px;
-	vertical-align: middle;
+.Main_Header_Container {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #131921;
+  padding: 0 1rem;
+}
+.Header_Hamburger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Hamburger_Menu {
+  color: white;
+  padding: 0;
+  border-radius: 0;
+  border: 0;
+  font-size: 0;
+}
+.Hamburger_Menu:hover,
+.Hamburger_Menu:focus {
+  outline: none !important;
+  color: #bbbbbb;
+}
+.Hamburger_Icon {
+  display: none !important;
+}
+.MobileRes_LogoLink {
+  display: none;
+  margin-left: 1rem;
+  width: 70px;
+}
+.MobileHeader_Logo {
+  object-fit: contain;
+}
+.DesktopHeader_Logo {
+  width: 100px;
+  object-fit: contain;
+  vertical-align: middle;
 }
 
 .Header_Search {
-	display: flex;
-	flex: 1;
-	align-items: center;
-	margin: 0 10px;
-	height: 40px;
-	transition: 0.4s ease-in-out;
-	border-radius: 5px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  margin: 0 10px;
+  height: 40px;
+  transition: 0.4s ease-in-out;
+  border-radius: 5px;
 }
 
 .Header_SearchIn {
-	font-size: 12px;
-	font-weight: 600;
-	background-color: #f3f3f3;
-	width: 50px;
-	padding-left: 5px;
-	height: 100%;
-	color: #5d5d5d;
-	cursor: pointer;
-	transition: 0.4s ease-in-out;
-	border-right: 1px solid #cfcfcf;
-	border-radius: 5px 0px 0px 5px;
-	z-index: 1;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #f3f3f3;
+  width: 50px;
+  padding-left: 5px;
+  height: 100%;
+  color: #5d5d5d;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  border-right: 1px solid #cfcfcf;
+  border-radius: 5px 0px 0px 5px;
+  z-index: 1;
 }
 
 .Header_SearchIn:focus-visible,
 .Header_SearchIn:hover {
-	color: #0f1111;
-	background-color: #dadada;
-	box-shadow: 0 0 0 2px #f90, 0 0 0 3px rgba(255, 153, 0, 0.5);
+  color: #0f1111;
+  background-color: #dadada;
+  box-shadow: 0 0 0 2px #f90, 0 0 0 3px rgba(255, 153, 0, 0.5);
 }
 .Header_SearchInput {
-	height: 100%;
-	width: 100%;
-	font-weight: 600;
-	transition: 0.4s ease-in-out;
-	padding: 10px;
+  height: 100%;
+  width: 100%;
+  font-weight: 600;
+  transition: 0.4s ease-in-out;
+  padding: 10px;
+  background: #fff;
+  color: #5d5d5d;
 }
 .Header_Sprint_Focused {
-	box-shadow: 0 0 0 2px #f90, 0 0 0 3px rgba(255, 153, 0, 0.5);
+  box-shadow: 0 0 0 2px #f90, 0 0 0 3px rgba(255, 153, 0, 0.5);
 }
 
 .Header_SearchIcon {
-	height: 100% !important;
-	width: 50px !important;
-	background-color: #febd69;
-	padding: 5px;
-	cursor: pointer;
-	border-radius: 0px 5px 5px 0px;
-	transition: 0.4s ease-in-out;
-	z-index: 1;
+  height: 100% !important;
+  width: 50px !important;
+  background-color: #febd69;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 0px 5px 5px 0px;
+  transition: 0.4s ease-in-out;
+  z-index: 1;
 }
 .Header_SearchIcon:focus-visible,
 .Header_SearchIcon:hover {
-	background-color: #f3a847;
-	box-shadow: 0 0 0 2px #f90, 0 0 0 3px rgba(255, 153, 0, 0.5);
+  background-color: #f3a847;
+  box-shadow: 0 0 0 2px #f90, 0 0 0 3px rgba(255, 153, 0, 0.5);
 }
 .Header_SearchIconSVG {
-	height: 100% !important;
-	width: 100% !important;
+  height: 100% !important;
+  width: 100% !important;
 }
 
 .Header_Nav {
-	display: flex;
-	justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 .Header_NavOptions {
-	display: flex;
-	flex-direction: column;
-	margin: 0 10px;
-	color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+.Header_NavOptions:hover,
+.Header_NavOptions:focus {
+  color: #bbbbbb;
 }
 .Header_NavOptions_LineOne {
-	font-size: 10px;
+  font-size: 10px;
 }
 .Header_NavOptions_LineTwo {
-	font-size: 13px;
-	font-weight: 800;
+  font-size: 13px;
+  font-weight: 800;
 }
 .Basket_Option {
-	flex-direction: row;
-	align-items: center;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 0;
+}
+.Basket_Option:hover {
+  color: white;
 }
 .BasketCount {
-	margin-left: 10px;
-	margin-right: 10px;
+  margin-left: 10px;
+}
+.Opacity {
+  transition: 0.4s ease-in-out;
+  opacity: 0.3;
+}
+.Person_Option {
+  margin: 0;
+  display: none;
+  height: 28px;
+}
+.Person_Icon {
+  line-height: 28px;
+}
+
+@media (max-width: 991px) {
+  .Hamburger_Icon {
+    display: inline-block !important;
+  }
+  .Person_Option,
+  .MobileRes_LogoLink {
+    display: inline-block;
+  }
+  .DesktopRes_LogoLink,
+  .Header_Search,
+  .SignIn_Option,
+  .Prime_Option,
+  .Order_Option {
+    display: none;
+  }
+}
+
+/* ************************************** */
+/*Header Bottom  */
+.Header_Bottom {
+  width: 100%;
+  padding: 0 1rem;
+  height: 100%;
+  background: #232f3e;
+  transition: 0.4s ease-in-out;
+}
+.Header_Bottom_Nav_Container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Header_Bottom_Nav_Left {
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.Bottom_Nav_Left_Link {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  padding: 8px;
+  border: 1px solid transparent;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+.Bottom_Nav_Left_Link:hover,
+.Bottom_Nav_Left_Link:focus {
+  border: 1px solid white;
+}
+.Hamburger_Left_Link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.Nav_Right_Link {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .Bottom_Nav_Left_Link {
+    font-size: 12px;
+    padding: 8px 4px;
+  }
+
+  .Nav_Right_Link {
+    font-size: 12px;
+  }
+}
+@media (max-width: 991px) {
+  .Header_Bottom {
+    display: none;
+  }
+}
+/* ************************************** */
+/* Mobile Sidebar  */
+.MobileSidebar {
+  display: none;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  z-index: 5;
+  height: 100vh;
+  color: black;
+  transition: 0.4s ease-in-out;
+}
+.MobileSidebar_Container {
+  display: flex;
+  justify-content: space-between;
+}
+.MobileSidebar_Content {
+  width: 92%;
+  overflow-y: scroll;
+  background: #fff;
+  height: 100vh;
+  padding-bottom: 3rem;
+}
+.MobileSidebar_Header {
+  height: 120px;
+  width: 100%;
+  background: #232f3e;
+  padding: 1rem;
+  color: #fff;
+}
+.MobileSidebar_HeaderTop {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  text-align: right;
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+}
+.MobileSidebar_HeaderTop_Txt {
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+}
+.MobileSidebar_HeaderBottom {
+  text-align: left;
+  color: #fff;
+  display: inline-block;
+}
+.MobileSidebar_Bottom_LineOne {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  display: block;
+}
+.MobileSidebar_Bottom_LineTwo {
+  font-size: 28px;
+  line-height: 28px;
+  display: block;
+}
+.MobileSidebar_Home_Link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #111;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.MobileSidebar_Separator {
+  border: 3px solid #d5dbdb;
+  padding: 0;
+  height: 0;
+}
+.MobileSidebar_Home,
+.MobileSidebar_Trending,
+.MobileSidebar_TopDepartments,
+.Sidebar_Menu {
+  padding: 1rem;
+}
+.Amazon_Home_Heading,
+.Trending_Heading,
+.TopDepartments_Heading,
+.Menu_Heading {
+  color: #111;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.MobileSidebar_Department_Link_Separator {
+  border: 1px solid #d5dbdb;
+  padding: 0;
+  height: 0px;
+}
+.Trending_Link,
+.Department_Link,
+.Menu_Link {
+  font-size: 16px;
+  font-weight: 500;
+  display: block;
+  margin: 10px 0;
+  color: #111111;
+}
+.MobileSidebar_Close_Btn,
+.DesktopSidebar_Close_Btn {
+  background: none;
+  color: white;
+  border: none;
+  outline: none;
+}
+.MobileSidebar_Close_Btn:focus,
+.DesktopSidebar_Close_Btn:focus,
+.MobileSidebar_Close_Btn:focus-within,
+.DesktopSidebar_Close_Btn:focus-within,
+.MobileSidebar_Close_Btn:active,
+.DesktopSidebar_Close_Btn:active,
+.MobileSidebar_Close_Btn:hover,
+.DesktopSidebar_Close_Btn:hover {
+  border: none;
+  outline: none;
+}
+.MobileSidebar_Close {
+  width: auto;
+  padding: 3rem 0.5rem;
+}
+.MobileSidebar_Open {
+  width: 100%;
+}
+@media (max-width: 1080px) {
+  .MobileSidebar {
+    display: block;
+  }
+}
+
+/* ************************************** */
+/* Desktop Sidebar  */
+.DesktopSidebar {
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  z-index: 5;
+  height: 100vh;
+  color: black;
+  transition: 0.4s ease-in-out;
+}
+.DesktopSidebar_Container {
+  width: 100%;
+  display: flex;
+}
+.DesktopSidebar_Content_Container {
+  width: 365px;
+}
+.DesktopSidebar_Separator {
+  border: 1px solid #d5dbdb;
+  padding: 0;
+  height: 0px;
+}
+.DesktopSidebar_Profile {
+  width: 100%;
+  height: 50px;
+}
+.DesktopSidebar_Profile_Link {
+  line-height: 50px;
+  background-color: #232f3e;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 19px;
+  font-weight: 600;
+  padding-left: 2rem;
+}
+.Profile_Txt {
+  margin-left: 5px;
+}
+.DesktopSidebar_Content {
+  width: 100%;
+  overflow-y: scroll;
+  background: #fff;
+  height: 100vh;
+  padding-bottom: 5rem;
+  position: relative;
+}
+.DesktopSIdebar_DisableScroll {
+  overflow: hidden;
+}
+.DesktopSidebar_Menu {
+  list-style: none;
+  margin: 0;
+}
+.Menu_Txt_Heading,
+.SubMenu_Menu_Heading {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #111;
+  text-transform: capitalize;
+  display: inline-block;
+  padding: 1rem 2rem;
+  padding-bottom: 0;
+}
+.Menu_Item_Container,
+.SubMenu_Menu_Container {
+  margin: 1rem 0;
+}
+
+.Menu_Item,
+.SubMenu_Menu_Item {
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #111;
+  display: block;
+  padding: 8px 32px;
+  margin: 5px 0;
+}
+.ShowMenuIcon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.SeeAllLink {
+  display: flex;
+  align-items: center;
+}
+.SeeAllLinkAfter {
+  display: none;
+  transition: 0.4s ease-in-out;
+}
+.Menu_Item:hover,
+.SubMenu_Menu_Item:hover {
+  background-color: #eaeded;
+  color: #111;
+}
+.DesktopSidebar_SubMenu {
+  /* position: absolute; */
+  position: fixed;
+  top: 0;
+  background: #fff;
+  width: 365px;
+  height: 100vh;
+  overflow-y: scroll;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(100%);
+  transition: opacity 0.4s, visibility 0.4s, transform 0.4s ease-in-out;
+  z-index: 2;
+  padding-bottom: 5rem;
+}
+
+.SubMenu_Show {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translateX(0%) !important;
+  transition: opacity 0.4s, visibility 0.4s, transform 0.4s ease-in-out;
+}
+.SubMenu_To_MainMenu {
+  display: flex;
+  align-items: center;
+  padding: 8px 32px;
+  margin: 5px 0;
+  gap: 5px;
+}
+.SubMenu_To_MainMenu_Txt {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #111;
+  text-transform: capitalize;
+}
+.DesktopSidebar_Close {
+  width: auto;
+  padding: 5px 0;
+}
+.DesktopSidebar_Open {
+  width: 100%;
 }

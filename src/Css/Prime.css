@@ -1,0 +1,39 @@
+.Prime {
+  background-color: rgba(234, 237, 237, 237);
+  max-width: 1658px;
+  margin: auto;
+}
+.HeroBanner {
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0)
+  );
+}
+.Prime_Hero_Container {
+  margin-bottom: -200px;
+  transition: 0.4s ease-in-out;
+}
+@media (max-width: 1360px) {
+  .Prime {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .Prime_Hero_Container {
+    margin-bottom: -150px;
+  }
+}
+@media (max-width: 768px) {
+  .Prime_Hero_Container {
+    margin-bottom: -100px;
+  }
+}
+
+@media (max-width: 425px) {
+  .Prime_Hero_Container {
+    margin-bottom: -50px;
+  }
+}

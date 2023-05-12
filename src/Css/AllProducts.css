@@ -1,0 +1,10 @@
+.AllProducts {
+  background-color: rgba(234, 237, 237, 237);
+  max-width: 1658px;
+  margin: auto;
+}
+@media (max-width: 1360px) {
+  .AllProducts {
+    width: 100%;
+  }
+}
