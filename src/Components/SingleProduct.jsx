@@ -9,15 +9,15 @@ import PlaceOutlinedIcon from "@mui/icons-material/PlaceOutlined";
 import DeleteOutlineOutlinedIcon from "@mui/icons-material/DeleteOutlineOutlined";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import RemoveIcon from "@mui/icons-material/Remove";
-import AddIcon from "@mui/icons-material/Add";
-import {
-  SelectIncrementDecrement,
-  PlusIncrement,
-  MinusDecrement,
-  DeleteFromCart,
-} from "../Store/Slices/cartSlice";
-import PriceFormat from "../Helpers/PriceFormat";
+// import RemoveIcon from "@mui/icons-material/Remove";
+// import AddIcon from "@mui/icons-material/Add";
+// import {
+//   SelectIncrementDecrement,
+//   PlusIncrement,
+//   MinusDecrement,
+//   DeleteFromCart,
+// } from "../Store/Slices/cartSlice";
+// import PriceFormat from "../Helpers/PriceFormat";
 import { Link } from "react-router-dom";
 
 const SingleProduct = () => {
@@ -72,6 +72,7 @@ const SingleProduct = () => {
                   alt="Product Picture"
                 />
               </div>
+              <div className="SingleProduct_Lens_Container"></div>
             </div>
             <div className="SingleProduct_Info_Container">
               <h2 className="SP_Title">
@@ -121,11 +122,10 @@ const SingleProduct = () => {
                 </div>
                 <div className="BuyBox_Stock">In Stock</div>
                 <div className="BuyBox_Quantity">
-                  <form className="Quantity_Info">
+                  <form className="BuyBox_Quantity_Info_Form">
                     <select
                       name="Quantity"
-                      id="Quantity"
-                      className="BuyBox_Quantity_Info"
+                      id="BuyBox_Quantity_Info_Select"
                       value="1"
                       onChange={(e) => QuantityOnchange(e, id)}
                     >
@@ -148,9 +148,7 @@ const SingleProduct = () => {
                         6
                       </option>
                     </select>
-                    <span className="Quantity_Txt BuyBox_Quantity_Txt">
-                      Qty :
-                    </span>
+                    <span className="BuyBox_Quantity_Txt">Qty:</span>
                   </form>
                 </div>
                 <div className="BuyBox_MainBtn">
@@ -250,6 +248,7 @@ const SingleProduct = () => {
           </div>
         </div>
       </div>
+      <div className="Mobile_SingleProduct"></div>
     </div>
   );
 };
